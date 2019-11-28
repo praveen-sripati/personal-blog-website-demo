@@ -1,6 +1,10 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #container {
     margin: auto;
-    width: 1000px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -23,6 +27,7 @@
 
 #blog-title {
     color: #444;
+    font-size: 2rem;
     text-decoration: underline;
 }
 
@@ -31,17 +36,49 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: auto;
-    grid-gap: 30px;
+    grid-gap: 2rem;
     grid-template-areas: 
     "cardOne cardTwo"
-    "cardThree cardFour";
+    "cardThree cardFour"
+    "cardFive cardSix";
 }
 
 .card {
     display: flex;
     flex-flow: column nowrap;
-    padding: 10px;
+    height: 13rem;
+    padding: 1rem;
     border: 1px solid black;
+}
+
+.card-short-title {
+    color: #146cfa;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.card-title {
+    margin: 0.5rem 0.2rem 0 0;
+}
+
+.card-time {
+    color: grey;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.card-info {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.continue-link {
+    margin-top: auto;
+}
+
+.design-title {
+    color: #42b883;
 }
 
 #cardOne {
