@@ -1,0 +1,31 @@
+#container {
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    
+}
+
+#header-content {
+    grid-area: header;
+}
+
+#nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-content {
+    grid-area: main;
+}
+
+#footer-content {
+    grid-area: footer;
+}
