@@ -8,7 +8,6 @@
         "header header header header"
         "main main main main"
         "footer footer footer footer";
-    
 }
 
 #header-content {
@@ -17,13 +16,48 @@
 
 #nav-links {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
 }
 
+#blog-title {
+    color: #444;
+    text-decoration: underline;
+}
+
 #main-content {
     grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "cardOne cardTwo"
+    "cardThree cardFour";
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#cardOne {
+    grid-area: cardOne;
+}
+
+#cardTwo {
+    grid-area: cardTwo;
+}
+
+#cardThree {
+    grid-area: cardThree;
+}
+
+#cardFour {
+    grid-area: cardFour;
 }
 
 #footer-content {
