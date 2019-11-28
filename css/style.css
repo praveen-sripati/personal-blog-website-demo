@@ -2,6 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Grid container of the homepage */
 #container {
     margin: auto;
     max-width: 1000px;
@@ -13,7 +14,10 @@ body {
         "main main main main"
         "footer footer footer footer";
 }
+/* End of grid container*/
 
+
+/* Related to header content*/
 #header-content {
     grid-area: header;
 }
@@ -30,7 +34,10 @@ body {
     font-size: 2rem;
     text-decoration: underline;
 }
+/* End of header content*/
 
+
+/* Start of main content*/
 #main-content {
     grid-area: main;
     display: grid;
@@ -48,7 +55,8 @@ body {
     flex-flow: column nowrap;
     height: 13rem;
     padding: 1rem;
-    border: 1px solid black;
+    /* border: 1px solid grey; */
+    box-shadow: 0 0 8px 5px lightgray;
 }
 
 .card-short-title {
@@ -96,7 +104,13 @@ body {
 #cardFour {
     grid-area: cardFour;
 }
+/* End of main content */
 
+
+/*Start of footer content*/
 #footer-content {
     grid-area: footer;
 }
+
+
+/*End of footer content*/
