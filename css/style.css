@@ -20,6 +20,7 @@ body {
 /* Related to header content*/
 #header-content {
     grid-area: header;
+    margin: 0 0 0.9rem 0;
 }
 
 #nav-links {
@@ -33,6 +34,11 @@ body {
     color: #444;
     font-size: 2rem;
     text-decoration: underline;
+    /* margin-right: 3rem; */
+}
+
+#search-icon {
+    padding: 1rem;
 }
 /* End of header content*/
 
@@ -110,7 +116,15 @@ body {
 /*Start of footer content*/
 #footer-content {
     grid-area: footer;
+    margin-top: 1.5rem;
+    justify-items: center;
 }
 
-
+#ft-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    background-color: #eae9e9;
+}
 /*End of footer content*/
