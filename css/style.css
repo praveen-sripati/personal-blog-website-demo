@@ -10,6 +10,10 @@ h1, h2, h3 {
     font-family: Roboto, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+p {
+    text-align: justify;
+}
+
 /* Grid container of the homepage */
 #container {
     margin: auto;
@@ -68,7 +72,7 @@ h1, h2, h3 {
 .card {
     display: flex;
     flex-flow: column nowrap;
-    height: fit-content;
+    height: auto;
     /* padding: 1rem; */
     /* border: 1px solid grey; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -148,3 +152,43 @@ h1, h2, h3 {
     background-color: #eff0f1;
 }
 /*End of footer content*/
+
+/*Media queries medium and smaller devices */
+@media only screen and (max-width: 768px) {
+    #main-content {
+        max-width: 600px;
+        margin: 0 84px;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        grid-template-areas:
+        "cardOne"
+        "cardTwo"
+        "cardThree"
+        "cardFour"
+        "cardFive"
+        "cardSix";
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #main-content {
+        width: 500px;
+        margin: 0 auto;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        grid-template-areas:
+        "cardOne"
+        "cardTwo"
+        "cardThree"
+        "cardFour"
+        "cardFive"
+        "cardSix";
+    }
+}
+/* End of media queries */
