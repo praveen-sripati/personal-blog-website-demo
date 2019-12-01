@@ -39,6 +39,7 @@ body {
 
 #search-icon {
     padding: 1rem;
+    color: black;
 }
 /* End of header content*/
 
@@ -125,6 +126,81 @@ body {
     flex-flow: column nowrap;
     align-items: center;
     padding: 1rem 0 2rem 0;
-    background-color: #eae9e9;
+    background-color: #eff0f1;
 }
 /*End of footer content*/
+
+/*------------ Blogpost css ------------*/
+
+#blog-content {
+    grid-area: main;
+    display: grid;
+    grid-auto-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "main-blog side";
+}
+
+#post-details {
+    grid-area: main-blog;
+}
+
+#post-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+hr {
+    border-color: #eff0f1;
+    opacity: 0.3;
+    border-width: 1.5px;
+}
+
+#bordered-para {
+    border: 1.5px solid darkgray;
+}
+
+#example-code {
+    display: block;
+    padding: 1rem;
+    background-color: #eff0f1;
+}
+
+#aside-content {
+    grid-area: side;
+}
+
+#about-blog {
+    background-color: #eff0f1;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+#about-para {
+    margin-top: 0;
+}
+
+#archives {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+#archives a {
+    display: block;
+}
+
+.aside-title {
+    margin-bottom: 0.4rem;
+}
+
+#elsewhere {
+    padding: 0.5rem 1rem;
+}
+
+#elsewhere a {
+    display: block;
+}
+
+
+
