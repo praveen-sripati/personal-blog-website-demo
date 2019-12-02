@@ -1,0 +1,15 @@
+/*Start of footer content*/
+#footer-content {
+  grid-area: footer;
+  margin-top: 1.5rem;
+  justify-items: center;
+}
+
+#ft-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 1rem 0 2rem 0;
+  background-color: #eff0f1;
+}
+/*End of footer content*/

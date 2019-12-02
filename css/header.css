@@ -1,0 +1,25 @@
+/* Related to header content*/
+#header-content {
+  grid-area: header;
+  margin: 0 0 0.9rem 0;
+}
+
+#nav-links {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#blog-title {
+  color: #444;
+  font-size: 2rem;
+  text-decoration: underline;
+  /* margin-right: 3rem; */
+}
+
+#search-icon {
+  padding: 1rem;
+  color: black;
+}
+/* End of header content*/

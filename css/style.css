@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('../css/blogpost.css');
+@import url('blogpost.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('card.css');
+@import url('mediaqueries.css');
 
 body {
     font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,33 +33,6 @@ p {
 /* End of grid container*/
 
 
-/* Related to header content*/
-#header-content {
-    grid-area: header;
-    margin: 0 0 0.9rem 0;
-}
-
-#nav-links {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#blog-title {
-    color: #444;
-    font-size: 2rem;
-    text-decoration: underline;
-    /* margin-right: 3rem; */
-}
-
-#search-icon {
-    padding: 1rem;
-    color: black;
-}
-/* End of header content*/
-
-
 /* Start of main content*/
 #main-content {
     grid-area: main;
@@ -68,90 +45,8 @@ p {
     "cardThree cardFour"
     "cardFive cardSix";
 }
-
-.card {
-    display: flex;
-    flex-flow: column nowrap;
-    height: auto;
-    /* padding: 1rem; */
-    /* border: 1px solid grey; */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-details {
-    padding: 1rem;
-    padding-top: 0;
-}
-
-.card-short-title {
-    color: #146cfa;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0;
-    margin-top: 0.5rem;
-}
-
-.card-title {
-    margin: 0.5rem 0.2rem 0 0;
-}
-
-.card-time {
-    color: grey;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-.card-info {
-    margin: 0.5rem 0;
-    font-size: 0.8rem;
-}
-
-.continue-link {
-    margin-top: auto;
-}
-
-.design-title {
-    color: #42b883;
-}
-
-#cardOne {
-    grid-area: cardOne;
-}
-
-#cardTwo {
-    grid-area: cardTwo;
-}
-
-#cardThree {
-    grid-area: cardThree;
-}
-
-#cardFour {
-    grid-area: cardFour;
-}
 /* End of main content */
 
-
-/*Start of footer content*/
-#footer-content {
-    grid-area: footer;
-    margin-top: 1.5rem;
-    justify-items: center;
-}
-
-#ft-container {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding: 1rem 0 2rem 0;
-    background-color: #eff0f1;
-}
-/*End of footer content*/
 
 /*Media queries medium and smaller devices */
 @media only screen and (max-width: 768px) {
@@ -171,11 +66,11 @@ p {
         "cardFive"
         "cardSix";
     }
-}
+  }
 
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     #main-content {
-        width: 500px;
+        width: 400px;
         margin: 0 auto;
         grid-area: main;
         display: grid;
@@ -190,5 +85,5 @@ p {
         "cardFive"
         "cardSix";
     }
-}
-/* End of media queries */
+  }
+  /* End of media queries */
